@@ -3,10 +3,11 @@
     padding: 0%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap'); /*font-family: 'Edu NSW ACT Foundation', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap'); /*font-family: 'Mukta', sans-serif;*/
 
 body{
     background-color: black;
+    
 }
 
 #navegacao{
@@ -15,29 +16,171 @@ body{
 
 .title{
     font-size: 2.5rem;
-}
-
-#welcome{
-    color: white;
+    color: rgb(6, 101, 224);
 }
 
 @media(max-width:430px){
     #hello{
-        font-size: 2rem;
+        font-size: 3rem;
         text-align: center;
+        color: white;
+        text-align: center;
+        animation: visibility 4s;
+        font-family: 'Mukta';
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
-    #welcome{
+    #hello span{
+        animation-name:colorName;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+    }
+
+    #type-dev{
         margin-top: 15px;
         animation: visibility 4s;
-        font-size: 0.8rem;
+        font-size: 1.3rem;
         text-align: center;
-        font-family: 'Edu NSW ACT Foundation', cursive;
+        font-family: 'Mukta';
+        margin-bottom: 40px;
+        color: white;
     }
 
     .button{
         animation: position 2s;
         width: 49%;
+        margin-bottom: 30px;
+    }
+
+    #navegacao{
+        margin-bottom: 20px;   
+    }
+
+    .btns-card{
+        width: 49%;
+    }
+
+    .img-my{
+        animation: chegando 3s;
+        border-radius: 50%;
+    }
+
+    .pt-my{
+        margin-bottom: 20px;
+    }
+
+    .adv{
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .experienciaAdv{
+        animation-name:colorExpeAdv;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        font-size: 2rem;
+    }
+
+    .experienciaGame{
+        animation-name:colorExpeGame;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        font-size: 2rem;
+    }
+
+    .experienciaRobo{
+        animation-name:colorExpeRobo;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        font-size: 2rem;
+    }
+
+    .techs{
+        text-align: center;
+    }
+
+    .butao-game{
+        margin-top: 3px;
+        width: 100%;
+    }
+
+    .game{
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+
+    .robo{
+        margin-bottom: 20px;
+    }
+
+    .aumentando{
+        animation: botaoGitcrescendo 1.5s infinite forwards;
+    }
+
+    #encontrarGithub{
+        color: white;
+        text-align: center;
+    }
+
+    .butao-git-finish{
+        margin-bottom: 10px;
+    }
+  
+
+    @keyframes chegando{
+        from{
+            margin-left: -500px;
+            opacity: 0;
+        }
+        to{
+            margin-left: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes colorName{
+        from{
+            color: white;
+        }
+        to{
+            color: rgb(6, 101, 224);
+        }
+    }
+
+    @keyframes colorExpeAdv{
+        from{
+            color: white;
+        }
+        to{
+            color: rgb(177, 74, 5);
+        }
+    }
+
+    @keyframes colorExpeGame{
+        from{
+            color: white;
+        }
+        to{
+            color: rgb(43, 185, 8);
+        }
+    }
+
+    @keyframes colorExpeRobo{
+        from{
+            color: white;
+        }
+        to{
+            color: rgb(126, 126, 126);
+        }
     }
 
 
@@ -56,6 +199,30 @@ body{
         }
         to{
             opacity: 1;
+        }
+    }
+
+    @keyframes butaoGitBrilhando{
+        from{
+            border: 1px solid rgb(255, 255, 255);
+        }
+        30%{
+            border: 1px solid rgb(43, 255, 0);
+        }
+        60%{
+            border: 1px solid rgb(255, 0, 0);
+        }
+        to{
+            border: 1px solid rgb(238, 255, 0);
+        }
+    }
+
+    @keyframes botaoGitcrescendo{
+        from{
+            transform: scale(0.5);
+        }
+        to{
+            transform: scale(1);
         }
     }
 }

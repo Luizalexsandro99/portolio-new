@@ -11,30 +11,179 @@
 <body>
     
     <div class="container">
-        <nav id="navegacao" class="navbar navbar-expand-sm navbar-dark">
-            <div class="navbar-brand mx-lg-5"><h4 class="display-4 title">progalexx</h4></div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div id="myNav" class="collapse navbar-collapse justify-content-end mx-lg-5">
-                <ul class="navbar-nav ">
-                    <li class="nav-item"><a href="index.html" class="nav-link active mr-lg-4">Home</a></li>
-                    <li class="nav-item"><a href="precos.html" class="nav-link mr-lg-4">Sobre</a></li>
-                    <li class="nav-item"><a href="sobre.html" class="nav-link mr-lg-4">Experiência</a></li>
-                    <li class="nav-item"><a href="sobre.html" class="nav-link mr-lg-4">Projetos</a></li>
-                </ul>
-            </div>
-        </nav>
+            <nav id="navegacao" class="navbar navbar-expand-sm navbar-dark">
+                <div class="navbar-brand mx-lg-5"><h4 class="display-4 title"> &lt;progalexx&gt;</h4></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div id="myNav" class="collapse navbar-collapse justify-content-end mx-lg-5">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item"><a href="index.html" class="nav-link active mr-lg-4">Home</a></li>
+                        <li class="nav-item"><a href="precos.html" class="nav-link mr-lg-4">Sobre</a></li>
+                        <li class="nav-item"><a href="sobre.html" class="nav-link mr-lg-4">Experiência</a></li>
+                        <li class="nav-item"><a href="sobre.html" class="nav-link mr-lg-4">Projetos</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-        <div class="row">
+        <div id="inicioTotal" class="row">
             <div class="col-sm-12 col-md-6" >
-                <p id="welcome"><span id="hello" class="display-4">Olá, eu sou Luiz</span> <br><br> Desenvolvedor fullStack</p>
+                <h4 id="hello" class="display-1">Olá, eu sou <br> <span>Luiz Alexsandro</span></h4>
+                <p id="type-dev">Desenvolvedor fullStack</p>
                 <button class="btn btn-sm btn-outline-primary button">Linkedin</button>
                 <button class="btn btn-sm  btn-outline-warning button">GitHub</button>
             </div>
         </div>
-    </div>
+
+        <div class="row bg-muted pt-my">
+            <div class="col-sm-12">
+                <div class="card">
+                    <img src="images/eu-pq.jpg" class="card-img-top img-my">
+                    <div class="card-body">
+                        <h4 class="card-title">Sobre mim</h4>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <p>Focado completamente nos estudos para me tornar um Desenvolvedor fullStack. No início deste ano (2022) comecei meus estudos por contra própria, em seguida entrei na faculdade. Cursando Análise e desenvolvimento de sistemas atualmente no segundo período (mês 08). Com conhecimentos bastante avançados, já participei de alguns projetos de amigos, e também fiz alguns freelas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="newCurriculum.pdf" download="currículo"><button class="btn btn-outline-info btns-card">Currículo</button></a>
+                        <a href="mailto:luizalexxsandro99@gmail.com"><button class="btn btn-outline-success btns-card">Email</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- primeiro projeto -->
+        <span class="experienciaAdv">Experiência</span>
+        <div class="row adv">
+            <div class="col-sm-12">
+                <div class="card">
+                    <img src="images/adv.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Página</h4>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <p>Página criada para um advogado, com foco em conseguir captar novos leads/clientes. #freela</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-text techs">
+                                HTML , CSS e JAVASCRIPT
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- fim primeiro projeto -->
+
+
+        <!-- segundo projeto -->
+        <span class="experienciaGame">Experiência</span>
+        <div class="row game">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-img-top"><div id="meuCarrossel" class="carousel slide" data-ride="carousel">          
+                        <ul class="carousel-indicators">
+                            <li data-target="#meuCarrossel" data-slide-to="0" class="active"></li>           
+                            <li data-target="#meuCarrossel" data-slide-to="1"></li>                
+                            <li data-target="#meuCarrossel" data-slide-to="2"></li>
+                            <li data-target="#meuCarrossel" data-slide-to="3"></li>
+                        </ul>               
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="bg-info text-light d-flex justify-content-center align-items-center pgbr-carrousel-item">
+                                    <img class="card-img-top" src="images/freela-pt1.jpeg" >
+                                </div>
+                            </div>                
+                            <div class="carousel-item ">
+                                <div class="bg-warning text-light d-flex justify-content-center align-items-center pgbr-carrousel-item">
+                                    <img class="card-img-top" src="images/freela-pt2.jpeg" >
+                                </div>
+                            </div>                
+                            <div class="carousel-item ">
+                                <div class="bg-danger text-light d-flex justify-content-center align-items-center pgbr-carrousel-item">
+                                    <img class="card-img-top" src="images/freela-pt3.jpeg" >
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="bg-danger text-light d-flex justify-content-center align-items-center pgbr-carrousel-item">
+                                    <img class="card-img-top" src="images/freela-pt4.jpeg" >
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Controles para a direita e esquerda  -->
+                
+                        <a class="carousel-control-prev" href="#meuCarrossel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                
+                        <a class="carousel-control-next" href="#meuCarrossel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Game Quiz</h4>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <p>Game quiz criado para um projeto escolar na frança, consiste basicamente em sortear um número, ir no jogador que é representado pelo número sorteado, e clicar, tendo acesso a pergunta e a resposta também passando o mouse por cima.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-text techs">
+                                HTML , CSS e JAVASCRIPT
+                            </div>
+                            <a href="https://luizalexsandro99.github.io/game-quiz/"><button class="btn btn-outline-success butao-game">Acessar game</button></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- fim segundo projeto -->
+
+
+        <!-- terceiro projeto -->
+        <span class="experienciaRobo">Experiência</span>
+        <div class="row robo">
+            <div class="col-sm-12">
+                <div class="card">
+                    <img src="images/robopt1-web.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Site</h4>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <p>Site criado para um robô trading... Todas as informações contidas no site são fictícias. Site completamente responsivo</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-text techs">
+                                HTML , CSS, BOOTSTRAP e JAVASCRIPT
+                            </div>
+                            <a href="https://github.com/Luizalexsandro99/robo"><button class="btn btn-outline-dark butao-game">Acessar site</button></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Fim terceiro projeto -->
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <p id="encontrarGithub">Para visualizar mais projetos, acesse meu github e confira.</p>
+                    <button class="btn btn-dark butao-game butao-git-finish">Encontrar gitHub</button>
+                </div>
+            </div>
+        </div>
+        
 
     
 
