@@ -1,26 +1,45 @@
-*{
+* {
     margin: 0%;
-    padding: 0%;
+    padding: 0%; 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap'); /*font-family: 'Mukta', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+/*font-family: 'Mukta', sans-serif;*/
 
-body{
+body {
     background-color: black;
-    
+
 }
 
-#navegacao{
+#navegacao {
     position: sticky;
 }
 
-.title{
+.title {
     font-size: 2.5rem;
     color: rgb(6, 101, 224);
 }
 
-@media(max-width:430px){
-    #hello{
+.efe{
+    opacity: 0;
+}
+
+.efect{
+    opacity: 1;
+    animation: efectScroll 1s;
+}
+
+@keyframes efectScroll{
+    from{
+        margin-left: -100%;
+    }
+    to{
+        margin-left: 0;
+    }
+}
+
+@media(max-width:430px) {
+    #hello {
         font-size: 3rem;
         text-align: center;
         color: white;
@@ -31,15 +50,15 @@ body{
         margin-bottom: 30px;
     }
 
-    #hello span{
-        animation-name:colorName;
+    #hello span {
+        animation-name: colorName;
         animation-duration: 3s;
         animation-direction: alternate;
         animation-fill-mode: backwards;
         animation-iteration-count: infinite;
     }
 
-    #type-dev{
+    #type-dev {
         margin-top: 15px;
         animation: visibility 4s;
         font-size: 1.3rem;
@@ -49,36 +68,36 @@ body{
         color: white;
     }
 
-    .button{
+    .button {
         animation: position 2s;
         width: 49%;
         margin-bottom: 30px;
     }
 
-    #navegacao{
-        margin-bottom: 20px;   
+    #navegacao {
+        margin-bottom: 20px;
     }
 
-    .btns-card{
+    .btns-card {
         width: 49%;
     }
 
-    .img-my{
+    .img-my {
         animation: chegando 3s;
         border-radius: 50%;
     }
 
-    .pt-my{
+    .pt-my {
         margin-bottom: 20px;
     }
 
-    .adv{
+    .adv {
         margin-top: 5px;
         margin-bottom: 15px;
     }
 
-    .experienciaAdv{
-        animation-name:colorExpeAdv;
+    .experienciaAdv {
+        animation-name: colorExpeAdv;
         animation-duration: 3s;
         animation-direction: alternate;
         animation-fill-mode: backwards;
@@ -86,8 +105,8 @@ body{
         font-size: 2rem;
     }
 
-    .experienciaGame{
-        animation-name:colorExpeGame;
+    .experienciaGame {
+        animation-name: colorExpeGame;
         animation-duration: 3s;
         animation-direction: alternate;
         animation-fill-mode: backwards;
@@ -95,8 +114,8 @@ body{
         font-size: 2rem;
     }
 
-    .experienciaRobo{
-        animation-name:colorExpeRobo;
+    .experienciaRobo {
+        animation-name: colorExpeRobo;
         animation-duration: 3s;
         animation-direction: alternate;
         animation-fill-mode: backwards;
@@ -104,124 +123,647 @@ body{
         font-size: 2rem;
     }
 
-    .techs{
+    .techs {
         text-align: center;
     }
 
-    .butao-game{
+    .butao-game {
         margin-top: 3px;
         width: 100%;
     }
 
-    .game{
+    .game {
         margin-top: 8px;
         margin-bottom: 20px;
     }
 
-    .robo{
+    .robo {
         margin-bottom: 20px;
     }
 
-    .aumentando{
+    .aumentando {
         animation: botaoGitcrescendo 1.5s infinite forwards;
     }
 
-    #encontrarGithub{
+    #encontrarGithub {
         color: white;
         text-align: center;
     }
 
-    .butao-git-finish{
+    .butao-git-finish {
         margin-bottom: 10px;
     }
-  
 
-    @keyframes chegando{
-        from{
+    #inven{
+        display: none;
+    }
+
+
+    @keyframes chegando {
+        from {
             margin-left: -500px;
             opacity: 0;
         }
-        to{
+
+        to {
             margin-left: 0;
             opacity: 1;
         }
     }
 
-    @keyframes colorName{
-        from{
+    @keyframes colorName {
+        from {
             color: white;
         }
-        to{
+
+        to {
             color: rgb(6, 101, 224);
         }
     }
 
-    @keyframes colorExpeAdv{
-        from{
+    @keyframes colorExpeAdv {
+        from {
             color: white;
         }
-        to{
+
+        to {
             color: rgb(177, 74, 5);
         }
     }
 
-    @keyframes colorExpeGame{
-        from{
+    @keyframes colorExpeGame {
+        from {
             color: white;
         }
-        to{
+
+        to {
             color: rgb(43, 185, 8);
         }
     }
 
-    @keyframes colorExpeRobo{
-        from{
+    @keyframes colorExpeRobo {
+        from {
             color: white;
         }
-        to{
+
+        to {
             color: rgb(126, 126, 126);
         }
     }
 
 
     @keyframes position {
-        from{
-           transform: scale(0.5);
+        from {
+            transform: scale(0.5);
         }
-        to{
+
+        to {
             transform: scale(1);
         }
     }
 
-    @keyframes visibility{
-        from{
+    @keyframes visibility {
+        from {
             opacity: 0;
         }
-        to{
+
+        to {
             opacity: 1;
         }
     }
 
-    @keyframes butaoGitBrilhando{
-        from{
+    @keyframes butaoGitBrilhando {
+        from {
             border: 1px solid rgb(255, 255, 255);
         }
-        30%{
+
+        30% {
             border: 1px solid rgb(43, 255, 0);
         }
-        60%{
+
+        60% {
             border: 1px solid rgb(255, 0, 0);
         }
-        to{
+
+        to {
             border: 1px solid rgb(238, 255, 0);
         }
     }
 
-    @keyframes botaoGitcrescendo{
-        from{
+    @keyframes botaoGitcrescendo {
+        from {
             transform: scale(0.5);
         }
-        to{
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (min-device-width: 431px) and (max-device-width: 990px) {
+
+    #hello {
+        font-size: 3rem;
+        color: white;
+        animation: visibility 4s;
+        font-family: 'Mukta';
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #hello span {
+        animation-name: colorName;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+    }
+
+    #type-dev {
+        margin-top: 15px;
+        animation: visibility 4s;
+        font-size: 1.3rem;
+        font-family: 'Mukta';
+        margin-bottom: 40px;
+        color: white;
+    }
+
+    .button {
+        animation: position 2s;
+        width: 49%;
+        margin-bottom: 30px;
+    }
+
+    #navegacao {
+        margin-bottom: 20px;
+    }
+
+    .btns-card {
+        width: 49%;
+    }
+
+    .img-my {
+        animation: chegando 3s;
+        border-radius: 50%;
+    }
+
+    .pt-my {
+        margin-bottom: 20px;
+    }
+
+    .adv {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .experienciaAdv {
+        animation-name: colorExpeAdv;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        font-size: 2rem;
+    }
+
+    .experienciaGame {
+        animation-name: colorExpeGame;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        font-size: 2rem;
+    }
+
+    .experienciaRobo {
+        animation-name: colorExpeRobo;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        font-size: 2rem;
+    }
+
+    .techs {
+        text-align: center;
+    }
+
+    .butao-game {
+        margin-top: 3px;
+        width: 100%;
+    }
+
+    .game {
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+
+    .robo {
+        margin-bottom: 20px;
+    }
+
+    .aumentando {
+        animation: botaoGitcrescendo 1.5s infinite forwards;
+    }
+
+    #encontrarGithub {
+        color: white;
+        text-align: center;
+    }
+
+    .butao-git-finish {
+        margin-bottom: 10px;
+    }
+
+    #img-md {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+    }
+
+    .txt-center {
+        text-align: center;
+    }
+
+    #inven{
+        display: none;
+    }
+
+    @keyframes chegando {
+        from {
+            margin-left: -500px;
+            opacity: 0;
+        }
+
+        to {
+            margin-left: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes colorName {
+        from {
+            color: white;
+        }
+
+        to {
+            color: rgb(6, 101, 224);
+        }
+    }
+
+    @keyframes colorExpeAdv {
+        from {
+            color: white;
+        }
+
+        to {
+            color: rgb(177, 74, 5);
+        }
+    }
+
+    @keyframes colorExpeGame {
+        from {
+            color: white;
+        }
+
+        to {
+            color: rgb(43, 185, 8);
+        }
+    }
+
+    @keyframes colorExpeRobo {
+        from {
+            color: white;
+        }
+
+        to {
+            color: rgb(126, 126, 126);
+        }
+    }
+
+
+    @keyframes position {
+        from {
+            transform: scale(0.5);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes visibility {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes butaoGitBrilhando {
+        from {
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        30% {
+            border: 1px solid rgb(43, 255, 0);
+        }
+
+        60% {
+            border: 1px solid rgb(255, 0, 0);
+        }
+
+        to {
+            border: 1px solid rgb(238, 255, 0);
+        }
+    }
+
+    @keyframes botaoGitcrescendo {
+        from {
+            transform: scale(0.5);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media(min-device-width: 991px){
+
+    #hello {
+        font-size: 4rem;
+        color: white;
+        animation: visibility 4s;
+        font-family: 'Mukta';
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+    #hello span {
+        animation-name: colorName;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+    }
+
+    #type-dev {
+        margin-top: 15px;
+        margin-left: 35px;
+        animation: visibility 4s;
+        font-size: 2.3rem;
+        font-family: 'Mukta';
+        margin-bottom: 40px;
+        color: white;
+    }
+
+    .button {
+        animation: position 2s;
+        width: 49%;
+        margin-bottom: 30px;
+    }
+
+    #navegacao {
+        margin-bottom: 20px;
+    }
+
+    .btns-card {
+        width: 49%;
+    }
+
+    .img-my {
+        animation: chegando 3s;
+        border-radius: 50%;
+    }
+
+    .pt-my {
+        margin-bottom: 20px;
+    }
+
+    .adv {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .experienciaAdv {
+        animation-name: colorExpeAdv;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        font-size: 2rem;
+    }
+
+    .experienciaGame {
+        animation-name: colorExpeGame;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        font-size: 2rem;
+    }
+
+    .experienciaRobo {
+        animation-name: colorExpeRobo;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        font-size: 2rem;
+    }
+
+    .techs {
+        text-align: center;
+    }
+
+    .butao-game {
+        margin-top: 3px;
+        width: 100%;
+    }
+
+    .game {
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+
+    .robo {
+        margin-bottom: 20px;
+    }
+
+    .aumentando {
+        animation: botaoGitcrescendo 1.5s infinite forwards;
+    }
+
+    #encontrarGithub {
+        color: white;
+        text-align: center;
+    }
+
+    .butao-git-finish {
+        margin-bottom: 10px;
+    }
+
+    #img-md {
+        position: absolute;
+        top: 0;
+        right: 0;  
+        margin-right: 50px;  
+        animation: chegandoImg 3s;
+    }
+
+    .txt-center {
+        text-align: center;
+    }
+
+    .img-h{
+        border-radius: 10%;
+        animation: chegandoHabilities 3s;
+    }
+
+    #inven{
+        min-height: 100vh;
+    }
+
+    .tlt{
+        min-height: 100%;
+    }
+
+    li{
+        margin-top: 8px;
+    }
+
+    #btnCurso{
+        width: 100%;
+    }
+
+    @keyframes chegandoHabilities {
+        from {
+            margin-left: -1500px;
+            opacity: 0;
+        }
+
+        to {
+            margin-right: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes chegando {
+        from {
+            margin-left: -500px;
+            opacity: 0;
+        }
+
+        to {
+            margin-left: 0;
+            opacity: 1;
+        }
+    }
+
+    
+    @keyframes chegandoImg {
+        from {
+            margin-right: -500px;
+            opacity: 0;
+        }
+
+        to {
+            margin-right: 50;
+            opacity: 1;
+        }
+    }
+
+
+    @keyframes colorName {
+        from {
+            color: white;
+        }
+
+        to {
+            color: rgb(6, 101, 224);
+        }
+    }
+
+    @keyframes colorExpeAdv {
+        from {
+            color: white;
+        }
+
+        to {
+            color: rgb(177, 74, 5);
+        }
+    }
+
+    @keyframes colorExpeGame {
+        from {
+            color: white;
+        }
+
+        to {
+            color: rgb(43, 185, 8);
+        }
+    }
+
+    @keyframes colorExpeRobo {
+        from {
+            color: white;
+        }
+
+        to {
+            color: rgb(126, 126, 126);
+        }
+    }
+
+
+    @keyframes position {
+        from {
+            transform: scale(0.5);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes visibility {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes butaoGitBrilhando {
+        from {
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        30% {
+            border: 1px solid rgb(43, 255, 0);
+        }
+
+        60% {
+            border: 1px solid rgb(255, 0, 0);
+        }
+
+        to {
+            border: 1px solid rgb(238, 255, 0);
+        }
+    }
+
+    @keyframes botaoGitcrescendo {
+        from {
+            transform: scale(0.5);
+        }
+
+        to {
             transform: scale(1);
         }
     }
