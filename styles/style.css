@@ -3,6 +3,26 @@
     padding: 0%; 
 }
 
+#scrol{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#scrol h5{
+    font-family: tantofaz2;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 5px;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 2px;
+    margin-top: 5px;
+}
+
+.setaImg{
+    margin-top: -7px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
 /*font-family: 'Mukta', sans-serif;*/
 
@@ -766,5 +786,62 @@ body {
         to {
             transform: scale(1);
         }
+    }
+}
+
+.experienciaMuri {
+    animation-name: colorExpeMuri;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    font-size: 2rem;
+}
+
+@keyframes colorExpeMuri {
+    from {
+        color: white;
+    }
+
+    to {
+        color: rgb(75, 74, 73);
+    }
+}
+
+.experienciaMed {
+    animation-name: colorExpeMed;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    font-size: 2rem;
+}
+
+@keyframes colorExpeMed {
+    from {
+        color: white;
+    }
+
+    to {
+        color: rgb(2, 227, 243);
+    }
+}
+
+.experienciaPerso {
+    animation-name: colorExpePerso;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    font-size: 2rem;
+}
+
+@keyframes colorExpePerso {
+    from {
+        color: white;
+    }
+
+    to {
+        color: rgb(255, 166, 0);
     }
 }

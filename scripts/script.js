@@ -29,6 +29,8 @@ function animeScroll(){
     target.forEach(function (element){
         if(windowTop + 350 >= element.offsetTop){
             element.classList.add('efect')
+        }if(element.classList.contains('efe')){
+            scrol.style.display = 'none'
         }
     })
 }
